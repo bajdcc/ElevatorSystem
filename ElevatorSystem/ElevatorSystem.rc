@@ -1,11 +1,11 @@
-//Microsoft Visual C++ ç”Ÿæˆçš„èµ„æºè„šæœ¬ã€‚
+// Microsoft Visual C++ generated resource script.
 //
 #include "resource.h"
 
 #define APSTUDIO_READONLY_SYMBOLS
 /////////////////////////////////////////////////////////////////////////////
 //
-// ä»Ž TEXTINCLUDE 2 èµ„æºç”Ÿæˆã€‚
+// Generated from the TEXTINCLUDE 2 resource.
 //
 #ifndef APSTUDIO_INVOKED
 #include "targetver.h"
@@ -13,44 +13,50 @@
 #define APSTUDIO_HIDDEN_SYMBOLS
 #include "windows.h"
 #undef APSTUDIO_HIDDEN_SYMBOLS
+
 /////////////////////////////////////////////////////////////////////////////
 #undef APSTUDIO_READONLY_SYMBOLS
 
+/////////////////////////////////////////////////////////////////////////////
+// ÖÐÎÄ(¼òÌå£¬ÖÐ¹ú) resources
+
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
-LANGUAGE 4, 2
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
 
 /////////////////////////////////////////////////////////////////////////////
 //
-// å›¾æ ‡
+// Icon
 //
 
-// ID å€¼æœ€ä½Žçš„å›¾æ ‡æ”¾åœ¨æœ€å‰é¢ï¼Œä»¥ç¡®ä¿åº”ç”¨ç¨‹åºå›¾æ ‡
-// åœ¨æ‰€æœ‰ç³»ç»Ÿä¸­ä¿æŒä¸€è‡´ã€‚
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ELEVATORSYSTEM      ICON                    "ElevatorSystem.ico"
 
-IDI_ELEVATORSYSTEM       ICON         "ElevatorSystem.ico"
-IDI_SMALL               ICON         "small.ico"
+IDI_SMALL               ICON                    "small.ico"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
-// èœå•
+// Menu
 //
 
 IDC_ELEVATORSYSTEM MENU
 BEGIN
-    POPUP "æ–‡ä»¶(&F)"
+    POPUP "ÎÄ¼þ(&F)"
     BEGIN
-        MENUITEM "é€€å‡º(&X)",                IDM_EXIT
+        MENUITEM "ÍË³ö(&X)",                      IDM_EXIT
     END
-    POPUP "å¸®åŠ©(&H)"
+    POPUP "°ïÖú(&H)"
     BEGIN
-        MENUITEM "å…³äºŽ(&A) ...",           IDM_ABOUT
+        MENUITEM "¹ØÓÚ(&A) ...",                  IDM_ABOUT
     END
 END
 
 
 /////////////////////////////////////////////////////////////////////////////
 //
-// å¿«æ·é”®
+// Accelerator
 //
 
 IDC_ELEVATORSYSTEM ACCELERATORS
@@ -62,19 +68,15 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
-// å¯¹è¯æ¡†
+// Dialog
 //
-
-IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
-STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "å…³äºŽ ElevatorSystem"
-FONT 9, "MS Shell Dlg"
+IDD_CCELEVATORSYSTEM_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_BORDER
+EXSTYLE WS_EX_APPWINDOW
+FONT 12, "Microsoft YaHei UI", 400, 0, 0x0
 BEGIN
-    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
-    LTEXT           "ElevatorSystemï¼Œç‰ˆæœ¬ 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
-    LTEXT           "ç‰ˆæƒæ‰€æœ‰ (C) 2017",IDC_STATIC,42,26,114,8
-    DEFPUSHBUTTON   "ç¡®å®š",IDOK,113,41,50,14,WS_GROUP
 END
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -87,24 +89,34 @@ BEGIN
     IDD_ABOUTBOX, DIALOG
     BEGIN
         LEFTMARGIN, 7
-        RIGHTMARGIN, 163
+        RIGHTMARGIN, 255
         TOPMARGIN, 7
-        BOTTOMMARGIN, 55
+        BOTTOMMARGIN, 148
+    END
+
+    IDD_CCELEVATORSYSTEM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
     END
 END
 #endif    // APSTUDIO_INVOKED
+
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
 //
 // TEXTINCLUDE
 //
-1 TEXTINCLUDE
+
+1 TEXTINCLUDE 
 BEGIN
     "resource.h\0"
 END
 
-2 TEXTINCLUDE
+2 TEXTINCLUDE 
 BEGIN
     "#ifndef APSTUDIO_INVOKED\r\n"
     "#include ""targetver.h""\r\n"
@@ -115,7 +127,7 @@ BEGIN
     "\0"
 END
 
-3 TEXTINCLUDE
+3 TEXTINCLUDE 
 BEGIN
     "\r\n"
     "\0"
@@ -123,18 +135,20 @@ END
 
 #endif    // APSTUDIO_INVOKED
 
+
 /////////////////////////////////////////////////////////////////////////////
 //
-// å­—ç¬¦ä¸²è¡¨
+// String Table
 //
 
 STRINGTABLE
 BEGIN
-   IDC_ELEVATORSYSTEM   "ELEVATORSYSTEM"
-   IDS_APP_TITLE       "ElevatorSystem"
+    IDS_APP_TITLE           "µçÌÝ¿ØÖÆ·ÂÕæÏµÍ³ V1.1"
+    IDS_ABOUT               "³ÌÐòÃû³Æ£º\n    µçÌÝ¿ØÖÆ·ÂÕæÏµÍ³£¨Elevator Emulator System£©\n\n³ÌÐò¼ò½é£º\n    ×ÔÖ÷¿ª·¢µÄµçÌÝµ÷¶ÈÏµÍ³£¬ÓÃÓÚµ¥µçÌÝºÍË«µçÌÝµÄ·ÂÕæ£¬Â¥²ãÎª10µ½20²ã£¬Ïà¹Ø²ÎÊý¿É×ÔÖ÷µ÷Õû¡£\n\n\n¸Ã³ÌÐò²ÉÓÃDirectUI¼¼Êõ¡£\n\n×÷Õß£ºbajdcc\n´´½¨Ê±¼ä£º2014.10\nÐÞ¸ÄÊ±¼ä£º2017.10"
+    IDC_ELEVATORSYSTEM      "ELEVATORSYSTEM"
 END
 
-#endif
+#endif    // ÖÐÎÄ(¼òÌå£¬ÖÐ¹ú) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
@@ -142,8 +156,10 @@ END
 #ifndef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
 //
-// ä»Ž TEXTINCLUDE 3 èµ„æºç”Ÿæˆã€‚
+// Generated from the TEXTINCLUDE 3 resource.
 //
 
+
 /////////////////////////////////////////////////////////////////////////////
-#endif    // ä¸æ˜¯ APSTUDIO_INVOKED
+#endif    // not APSTUDIO_INVOKED
+
